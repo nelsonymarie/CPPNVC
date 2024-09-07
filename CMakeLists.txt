@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.29)
+project(CPPNVC)
+
+set(CMAKE_CXX_STANDARD 20)
+
+# Add executables, all with the same name 'CPPNVC'
+#add_executable(CPPNVC hello_world.cpp)
+add_executable(CPPNVC course_output.cpp)
+#add_executable(CPPNVC quote_lab.cpp)
+#add_executable(CPPNVC name_and_email.cpp)
+#add_executable(CPPNVC student_data.cpp)
+#add_executable(CPPNVC grade_average.cpp)
+#add_executable(CPPNVC calculate_two_numbers.cpp)
+#add_executable(CPPNVC temperature_conversion.cpp)
+#add_executable(CPPNVC point_of_sale.cpp)
+#add_executable(CPPNVC mpg_challenge_lab.cpp)
+#add_executable(CPPNVC operator_challenge_lab.cpp)
+#add_executable(CPPNVC Module1_Lecture3Exer.cpp)
+#add_executable(CPPNVC Math_Demo.cpp)
+#add_executable(CPPNVC using_strings.cpp)

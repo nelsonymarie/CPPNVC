@@ -1,0 +1,3 @@
+/Users/misaelcuadrado/CLionProjects/CPPNVC/cmake-build-debug/CMakeFiles/CPPNVC.dir
+/Users/misaelcuadrado/CLionProjects/CPPNVC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/misaelcuadrado/CLionProjects/CPPNVC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
