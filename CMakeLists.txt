@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 # Add executables, all with the same name 'CPPNVC'
 #add_executable(CPPNVC hello_world.cpp)
-add_executable(CPPNVC course_output.cpp)
+#add_executable(CPPNVC course_output.cpp)
 #add_executable(CPPNVC quote_lab.cpp)
 #add_executable(CPPNVC name_and_email.cpp)
 #add_executable(CPPNVC student_data.cpp)
@@ -18,3 +18,9 @@ add_executable(CPPNVC course_output.cpp)
 #add_executable(CPPNVC Module1_Lecture3Exer.cpp)
 #add_executable(CPPNVC Math_Demo.cpp)
 #add_executable(CPPNVC using_strings.cpp)
+#add_executable(CPPNVC output_demoSEP10.cpp)
+#add_executable(CPPNVC converting_data_types_demoSEP10)
+#add_executable(CPPNVC demo_getline.cpp)
+#add_executable(CPPNVC using_IO_manipulators.cpp)
+add_executable(CPPNVC menu_mod2.cpp)
+
