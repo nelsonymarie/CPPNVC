@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/misaelcuadrado/CLionProjects/CPPNVC/cmake-build-deb
 
 build cmake_object_order_depends_target_CPPNVC: phony || .
 
-build CMakeFiles/CPPNVC.dir/menu_mod2.cpp.o: CXX_COMPILER__CPPNVC_unscanned_Debug /Users/misaelcuadrado/CLionProjects/CPPNVC/menu_mod2.cpp || cmake_object_order_depends_target_CPPNVC
-  DEP_FILE = CMakeFiles/CPPNVC.dir/menu_mod2.cpp.o.d
+build CMakeFiles/CPPNVC.dir/Demo_While.cpp.o: CXX_COMPILER__CPPNVC_unscanned_Debug /Users/misaelcuadrado/CLionProjects/CPPNVC/Demo_While.cpp || cmake_object_order_depends_target_CPPNVC
+  DEP_FILE = CMakeFiles/CPPNVC.dir/Demo_While.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CPPNVC.dir
   OBJECT_FILE_DIR = CMakeFiles/CPPNVC.dir
@@ -63,7 +63,7 @@ build CMakeFiles/CPPNVC.dir/menu_mod2.cpp.o: CXX_COMPILER__CPPNVC_unscanned_Debu
 #############################################
 # Link the executable CPPNVC
 
-build CPPNVC: CXX_EXECUTABLE_LINKER__CPPNVC_Debug CMakeFiles/CPPNVC.dir/menu_mod2.cpp.o
+build CPPNVC: CXX_EXECUTABLE_LINKER__CPPNVC_Debug CMakeFiles/CPPNVC.dir/Demo_While.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/CPPNVC.dir
   POST_BUILD = :

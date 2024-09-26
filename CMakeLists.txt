@@ -22,5 +22,15 @@ set(CMAKE_CXX_STANDARD 20)
 #add_executable(CPPNVC converting_data_types_demoSEP10)
 #add_executable(CPPNVC demo_getline.cpp)
 #add_executable(CPPNVC using_IO_manipulators.cpp)
-add_executable(CPPNVC menu_mod2.cpp)
+#add_executable(CPPNVC menu_mod2.cpp)
+#add_executable(CPPNVC simple_file_io.cpp)
+#add_executable(CPPNVC module_2Lecture_3.cpp)
+#add_executable(CPPNVC module_2Lecture_4.cpp)
+#add_executable(CPPNVC Module2-Lab-Monthly-Expenses-lab1.cpp)
+#add_executable(CPPNVC Module2-Lab-alamo-hotel-lab2.cpp)
+#add_executable(CPPNVC Project_A_Section_2_lab_3.cpp)
+#add_executable(CPPNVC Demo_Grades_Class.cpp)
+add_executable(CPPNVC Demo_While.cpp)
+
+
 
