@@ -237,48 +237,81 @@
 
 
 
-#include <iostream>  // Include iostream to handle input and output
+// #include <iostream>  // Include iostream to handle input and output
+// using namespace std;
+//
+// int main() {  // Everything should be inside the main function
+//
+//  // First while loop with continue statement
+//  // This loop doesn't terminate when a negative number is found
+//  int sum = 0;  // Declare and initialize sum
+//  int num;  // Declare num to store user input
+//
+//  cin >> num;  // Take the first input
+//
+//  while (cin) {  // Continue while the input is valid
+//   if (num < 0) {  // If a negative number is found
+//    cout << "Negative number found in data." << endl;
+//    cin >> num;  // Read the next number
+//    continue;  // Skip the rest of the loop iteration
+//   }
+//   sum += num;  // Add the number to the sum
+//   cin >> num;  // Read the next number
+//  }
+//  cout << "Total: " << sum << endl;  // Output the total sum
+//
+//  // Reset the cin stream in case of any input errors
+//  cin.clear();
+//  cin.ignore(200, '\n');
+//
+//  // Second while loop without continue statement
+//  // This loop also doesn't terminate when a negative number is found
+//  sum = 0;  // Reset sum to 0
+//  cin >> num;  // Take the first input
+//
+//  while (cin) {  // Continue while the input is valid
+//   if (num > 0)  // If a positive number is found
+//    sum += num;  // Add the number to the sum
+//   else  // If a negative number is found
+//    cout << "Negative number found in data." << endl;
+//
+//   cin >> num;  // Read the next number
+//  }
+//
+//  cout << "Total: " << sum << endl;  // Output the final sum
+//
+//  return 0;  // Return 0 to indicate successful execution
+// }
+
+
+
+
+
+
+
+
+// Program to display a multiplication table
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
-int main() {  // Everything should be inside the main function
-
- // First while loop with continue statement
- // This loop doesn't terminate when a negative number is found
- int sum = 0;  // Declare and initialize sum
- int num;  // Declare num to store user input
-
- cin >> num;  // Take the first input
-
- while (cin) {  // Continue while the input is valid
-  if (num < 0) {  // If a negative number is found
-   cout << "Negative number found in data." << endl;
-   cin >> num;  // Read the next number
-   continue;  // Skip the rest of the loop iteration
-  }
-  sum += num;  // Add the number to the sum
-  cin >> num;  // Read the next number
+int main()
+{
+ // Set up variables
+ int row, col;
+ // Header for the multiplication table
+ cout << "   |";
+ for (col = 1; col <= 10; col++)
+  cout << setw(4) << col;
+ cout << "\n";
+ cout << "----------------------------------------------\n";
+ // Nested for loop for the multiplication table
+ for (row = 1; row <= 10; row++) // Each table row
+ {
+  cout << setw(2) << row << " |";
+  for (col = 1; col <= 10; col++) // Each column for the row
+   cout << setw(4) << row * col;
+  cout << endl;
  }
- cout << "Total: " << sum << endl;  // Output the total sum
-
- // Reset the cin stream in case of any input errors
- cin.clear();
- cin.ignore(200, '\n');
-
- // Second while loop without continue statement
- // This loop also doesn't terminate when a negative number is found
- sum = 0;  // Reset sum to 0
- cin >> num;  // Take the first input
-
- while (cin) {  // Continue while the input is valid
-  if (num > 0)  // If a positive number is found
-   sum += num;  // Add the number to the sum
-  else  // If a negative number is found
-   cout << "Negative number found in data." << endl;
-
-  cin >> num;  // Read the next number
- }
-
- cout << "Total: " << sum << endl;  // Output the final sum
-
- return 0;  // Return 0 to indicate successful execution
+ return 0;
 }
