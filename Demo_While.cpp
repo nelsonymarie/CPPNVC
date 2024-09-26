@@ -178,35 +178,54 @@
 // }
 
 
+// #include <iostream>  // Corrected the include for iostream
+// using namespace std;
+
+// int main() {
+//
+//  int userInput = 0;
+//  int total = 0;
+//
+//  // Fixed the while loop condition
+//  while (true) {
+//   cout << "Enter a number to add or enter 0 to exit: ";
+//   cin >> userInput;
+//
+//   // If the user enters 0 or a negative number, exit the loop
+//   if (userInput <= 0)
+//    break;
+//
+//   // Add the user input to the total
+//   total = total + userInput;
+//
+//   // Output the current total
+//   cout << "The total is " << total << endl;
+//  }
+//
+//  return 0;
+// }
+
+
+
 #include <iostream>  // Corrected the include for iostream
 using namespace std;
 
 int main() {
+ int sum = 0, num;  // Declare and initialize variables inside the function
 
- int userInput = 0;
- int total = 0;
+ cin >> num;  // Input the first number
 
- // Fixed the while loop condition
- while (true) {
-  cout << "Enter a number to add or enter 0 to exit: ";
-  cin >> userInput;
+ while (cin) {  // Continue looping while the input is valid
+  if (num < 0) {
+   cout << "negative number found in data" << endl;
+   break;  // Stop the loop when a negative number is found
+  }
 
-  // If the user enters 0 or a negative number, exit the loop
-  if (userInput <= 0)
-   break;
-
-  // Add the user input to the total
-  total = total + userInput;
-
-  // Output the current total
-  cout << "The total is " << total << endl;
+  sum += num;  // Add the number to the sum
+  cin >> num;  // Input the next number
  }
+
+ cout << "Total sum: " << sum << endl;  // Output the total sum
 
  return 0;
 }
-
-
-
-
-
-
