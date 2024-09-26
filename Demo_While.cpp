@@ -207,25 +207,78 @@
 
 
 
-#include <iostream>  // Corrected the include for iostream
+// #include <iostream>  // Corrected the include for iostream
+// using namespace std;
+//
+// int main() {
+//  int sum = 0, num;  // Declare and initialize variables inside the function
+//
+//  do {
+//   // Prompt the user to enter a number
+//   cout << "Enter a number to add to the total (or enter a negative number to exit): ";
+//   cin >> num;  // Input the number
+//
+//   if (num < 0) {
+//    cout << "Negative number found. Exiting...\n";
+//    break;  // Stop the loop when a negative number is found
+//   }
+//
+//   sum += num;  // Add the number to the sum
+//   cout << "Current total is: " << sum << endl;  // Display the current total
+//
+//  } while (true);  // Continue looping indefinitely until break
+//
+//  cout << "Final total sum: " << sum << endl;  // Output the final total sum
+//
+//  return 0;
+// }
+
+
+
+
+
+#include <iostream>  // Include iostream to handle input and output
 using namespace std;
 
-int main() {
- int sum = 0, num;  // Declare and initialize variables inside the function
+int main() {  // Everything should be inside the main function
 
- cin >> num;  // Input the first number
+ // First while loop with continue statement
+ // This loop doesn't terminate when a negative number is found
+ int sum = 0;  // Declare and initialize sum
+ int num;  // Declare num to store user input
 
- while (cin) {  // Continue looping while the input is valid
-  if (num < 0) {
-   cout << "negative number found in data" << endl;
-   break;  // Stop the loop when a negative number is found
+ cin >> num;  // Take the first input
+
+ while (cin) {  // Continue while the input is valid
+  if (num < 0) {  // If a negative number is found
+   cout << "Negative number found in data." << endl;
+   cin >> num;  // Read the next number
+   continue;  // Skip the rest of the loop iteration
   }
-
   sum += num;  // Add the number to the sum
-  cin >> num;  // Input the next number
+  cin >> num;  // Read the next number
+ }
+ cout << "Total: " << sum << endl;  // Output the total sum
+
+ // Reset the cin stream in case of any input errors
+ cin.clear();
+ cin.ignore(200, '\n');
+
+ // Second while loop without continue statement
+ // This loop also doesn't terminate when a negative number is found
+ sum = 0;  // Reset sum to 0
+ cin >> num;  // Take the first input
+
+ while (cin) {  // Continue while the input is valid
+  if (num > 0)  // If a positive number is found
+   sum += num;  // Add the number to the sum
+  else  // If a negative number is found
+   cout << "Negative number found in data." << endl;
+
+  cin >> num;  // Read the next number
  }
 
- cout << "Total sum: " << sum << endl;  // Output the total sum
+ cout << "Total: " << sum << endl;  // Output the final sum
 
- return 0;
+ return 0;  // Return 0 to indicate successful execution
 }
